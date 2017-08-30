@@ -170,6 +170,7 @@ def train():
     return pi, A, B
 
 
+
 def load_train():
     f = file(".\\pi.txt", mode="r")
     for line in f:
