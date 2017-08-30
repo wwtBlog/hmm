@@ -24,7 +24,7 @@ def log_normalize(a):
         else:
             a[i] = math.log(a[i]) - s
 
-
+'''
 def log_sum(a):
     if not a:   # a为空
         return infinite
@@ -143,6 +143,7 @@ def baum_welch(pi, A, B):
         print "Pi:", pi
         print "A", A
 
+'''
 
 def mle():  # 0B/1M/2E/3S
     pi = [0] * 4   # npi[i]：i状态的个数
@@ -150,6 +151,7 @@ def mle():  # 0B/1M/2E/3S
     b = [[0]* 65536 for x in range(4)]  # nb[i][o]：从i状态到o字符的个数
     f = file(".\\24.pku_training.utf8")
     data = f.read()[3:].decode('utf-8')
+
     f.close()
     tokens = data.split('  ')
     last_q = 2
